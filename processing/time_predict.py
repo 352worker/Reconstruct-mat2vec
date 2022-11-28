@@ -59,7 +59,6 @@ def predict_output_word(context_words_list1, year, data, topn=3000) -> list:
     for i in result:
         pred.append(i[0])
         prop.append(i[1])
-    #随机排序材料
     return pred
     # random.shuffle(pred) 
 
