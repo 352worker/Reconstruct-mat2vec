@@ -19,7 +19,7 @@ tool = MaterialsTextProcessor()
 
 def processing(year):
     mat=[]
-    f = open("../hxs_2021.csv",'r',encoding="utf-8") 
+    f = open("./hxs_2021.csv",'r',encoding="utf-8") 
     for line in f:
         m = line.split(',')
         mat.append(m[0].strip())
@@ -29,8 +29,7 @@ def processing(year):
     df['pro'] = 0
     #df['typ_pro'] = 0
     print("processing: %d" %year)
-    f = open("../../para/final/%d.txt" %year, "r", encoding="utf-8")  # open the abs_txt
-    # f2 = open("./abs2/MATE%d.txt" %year, "r", encoding="utf-8")
+    f = open("../get_data/para/final/%d.txt" %year, "r", encoding="utf-8")  # open the abs_txt
 
     print("processing year is %d" %year)
     abstract = f.readlines()
