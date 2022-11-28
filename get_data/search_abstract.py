@@ -5,14 +5,6 @@ from pybliometrics.scopus import AbstractRetrieval
 import multiprocessing
 import argparse
 
-# 消除证书验证的错误
-# from requests_toolbelt import SSLAdapter
-# import requests
-# adapter = SSLAdapter('TLSv1')
-# s1 = requests.Session()
-# s1.mount('https://', adapter)
-
-
 
 def download_abstract(year):
     start = datetime.now().replace(microsecond=0)
