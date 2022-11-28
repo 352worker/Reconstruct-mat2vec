@@ -7,9 +7,9 @@ import multiprocessing
 mp = text_process.TextProcess()
 def process(year):
     f1_corpus = open("./abs/abs%d.txt" %year, 'r',encoding="utf-8")  # daichuli
-    f2_unsplit_sent_abs = open("../../results/text-v0/%dpara.txt" %year, 'w', encoding="utf-8") 
-    f3_split_sent_abs = open("../../results/sent-v0/%sent.txt" %year, 'w', encoding="utf-8")
-    f4_mat = open("../../results/mat-v0/%dmat.txt" %year, 'w', encoding="utf-8")
+    f2_unsplit_sent_abs = open("./text-v0/%dpara.txt" %year, 'w', encoding="utf-8") 
+    f3_split_sent_abs = open("./sent-v0/%sent.txt" %year, 'w', encoding="utf-8")
+    f4_mat = open("./mat-v0/%dmat.txt" %year, 'w', encoding="utf-8")
     # f5_error = open("./error/2d2020.txt", 'w', encoding="utf-8")
     texts = f1_corpus.readlines()
 
