@@ -39,8 +39,8 @@ def download_abstract(year):
         print("Congratulations!!")
 # download_abstract(1980)
 if __name__ == "__main__":
-    pool = multiprocessing.Pool(50)
-    for i in range(2021,2023):
+    pool = multiprocessing.Pool(91)
+    for i in range(1921,2012):
         pool.apply_async(func=download_abstract, args=(i,))
     pool.close()
     pool.join()
